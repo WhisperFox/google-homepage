@@ -1,0 +1,64 @@
+<!-- TODO:  LOW: try both methods flexbox & grid layout determin which is better used for google homepage layout
+     TODO:  HIGH: center google image and form 
+     TODO:  HIGH: finish navbar and footer and remove hyperlink styling -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<!-- Commenting out for testing grid container for css  may return this to this method later?  -->
+    <!-- <header>
+        <div class="topnav">
+        <ul>
+            <li><a href="About">About</a></li>
+            <li><a href="Store">Store</a></li>
+            <li><a href="Gmail">Gmail</a></li>
+            <li><a href="Images">Images</a></li>
+            <li><a href="Sign-in">Sign-in</a></li>
+        </ul>
+        </div>
+    </header> -->
+
+<!-- This is the grid container testing grid usage incompared to using flexbox -->
+    <header>
+    <div class="container">
+        <div class="hleft">About<a href="about">about</a></div>
+        <div class="hleft">Store</div>
+        <div class="hright">Gmail</div>
+        <div class="hright">Images</div>
+        <div class="hright">Sign-in</div>
+    </div>
+    </header>
+
+<main class="google-form">
+    <img alt="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <div id="google-search">
+        <form id="newsearch" method="get" action="">
+        <input type="text" class="text-input" name="google-search">
+        </form>
+    </div>
+</main>
+    <div>
+    <footer>
+        <div class="">
+        <ul>
+            <div class="fleft">Advertising</div>
+            <div class="fleft">Business</div>
+            <div class="fleft">How Search works</div>
+            <div class="fright">Privacy</div>
+            <div class="fright">terms</div>
+            <div class="fright">Settings</div>
+        </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
+
