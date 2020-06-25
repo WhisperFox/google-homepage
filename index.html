@@ -1,64 +1,61 @@
-<!-- TODO:  LOW: try both methods flexbox & grid layout determin which is better used for google homepage layout
-     TODO:  HIGH: center google image and form 
-     TODO:  HIGH: finish navbar and footer and remove hyperlink styling -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <title>Google (mine)</title>
+    <link href="styles/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/Google_icon.png">
 </head>
-<!-- Commenting out for testing grid container for css  may return this to this method later?  -->
-    <!-- <header>
-        <div class="topnav">
-        <ul>
-            <li><a href="About">About</a></li>
-            <li><a href="Store">Store</a></li>
-            <li><a href="Gmail">Gmail</a></li>
-            <li><a href="Images">Images</a></li>
-            <li><a href="Sign-in">Sign-in</a></li>
+
+<body>
+    <nav>
+        <ul class="nav-left">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
         </ul>
+
+        <ul class="nav-right">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+            <li><img id="user-icon" src="https://lh3.googleusercontent.com/ogw/ADGmqu9PGlwtpGdhNiGFzHFXDa_3qyw_S6ORrFinBIpw=s32-c-mo"></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="google-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="google logo" width="272px" height="92px">
         </div>
-    </header> -->
 
-<!-- This is the grid container testing grid usage incompared to using flexbox -->
-    <header>
-    <div class="container">
-        <div class="hleft">About<a href="about">about</a></div>
-        <div class="hleft">Store</div>
-        <div class="hright">Gmail</div>
-        <div class="hright">Images</div>
-        <div class="hright">Sign-in</div>
-    </div>
-    </header>
+        <div class="google">
+            <input class="search-form" type="text">
+        </div>
+        
+        <div class="google-items">
+            <input  value="Google Search" type="submit">
+            <input  value="I'm Feeling Lucky" type="submit">
+        </div>
+    </main>
 
-<main class="google-form">
-    <img alt="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <div id="google-search">
-        <form id="newsearch" method="get" action="">
-        <input type="text" class="text-input" name="google-search">
-        </form>
-    </div>
-</main>
-    <div>
     <footer>
-        <div class="">
-        <ul>
-            <div class="fleft">Advertising</div>
-            <div class="fleft">Business</div>
-            <div class="fleft">How Search works</div>
-            <div class="fright">Privacy</div>
-            <div class="fright">terms</div>
-            <div class="fright">Settings</div>
+        <ul class="footer-left">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
         </ul>
-        </div>
+
+        <ul class="footer-right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+
     </footer>
 </body>
-</html>
 
+</html>
 
